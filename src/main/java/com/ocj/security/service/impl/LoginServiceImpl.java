@@ -42,9 +42,9 @@ public class LoginServiceImpl implements LoginService {
 
 
         //是否被
-        if (Objects.isNull(authenticate)){
+        /*if (Objects.isNull(authenticate)){
             throw new RuntimeException("用户名或密码错误");
-        }
+        }*/
 
         //获取userid生成token
         LoginUser loginUser = (LoginUser) authenticate.getPrincipal();

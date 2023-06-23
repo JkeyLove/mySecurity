@@ -35,6 +35,7 @@ public class LoginUser implements UserDetails {
             return authorities;
         }
 
+        //将自己写的permissions,转为security自带的authorities,返回自带的authorities
         //把permission中String类型的权限信息封装成SimpleGrantedAuthority对象
         authorities = new ArrayList<>();
         for (String permission : permissions) {
